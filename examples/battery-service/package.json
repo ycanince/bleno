@@ -1,6 +1,6 @@
 {
   "name": "battery-service",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "BLE (Bluetooth Low Energy) Battery Service",
   "main": "index.js",
   "engines": {
