@@ -135,8 +135,8 @@ bleno.startAdvertisingIBeacon(name, uuid, major, minor, measuredPower[, callback
 ##### Start advertising with EIR data (__Linux only__)
 
 ```javascript
-var scanData = new Buffer(...); // maximum 31 bytes
-var advertisementData = new Buffer(...); // maximum 31 bytes
+var scanData = Buffer.from(...); // maximum 31 bytes
+var advertisementData = Buffer.from(...); // maximum 31 bytes
 
 bleno.startAdvertisingWithEIRData(advertisementData[, scanData, callback(error)]);
 ```
@@ -228,7 +228,7 @@ Parameters to handler are
 
 ```javascript
 var result = Characteristic.RESULT_SUCCESS;
-var data = new Buffer( ... );
+var data = Buffer.from( ... );
 
 callback(result, data);
 ```
